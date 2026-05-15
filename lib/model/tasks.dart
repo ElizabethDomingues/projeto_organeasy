@@ -4,8 +4,8 @@ class Task {
   int? id;
   String name;
   String room;
-  int memberId; // <-- Adicionado ID do membro
-  String memberName; // <-- Opcional: para exibir nome, se quiser
+  int memberId; 
+  String memberName; 
   String status;
   Color color;
   DateTime date;
@@ -26,8 +26,8 @@ class Task {
       'id': id,
       'name': name,
       'room': room,
-      'memberId': memberId, // <-- Gravamos o ID
-      'memberName': memberName, // <-- Nome apenas para exibição
+      'memberId': memberId, 
+      'memberName': memberName,
       'status': status,
       'color': color.value,
       'date': date.toIso8601String(),
@@ -39,8 +39,8 @@ class Task {
       id: map['id'] as int?,
       name: (map['name'] ?? '') as String,
       room: (map['room'] ?? '') as String,
-      memberId: (map['memberId'] ?? 0) as int, // <-- Importante
-      memberName: (map['memberName'] ?? '') as String, // <-- Importante
+      memberId: (map['memberId'] ?? 0) as int, 
+      memberName: (map['memberName'] ?? '') as String,
       status: (map['status'] ?? 'Não realizada') as String,
       color: Color(map['color'] as int),
       date: DateTime.tryParse(map['date'] ?? '') ?? DateTime.now(), 
@@ -70,7 +70,6 @@ class Task {
     );
   }
 
-  // 🔥 Facilitar debug
   @override
   String toString() {
     return 'Task(id: $id, name: $name, room: $room, memberId: $memberId, memberName: $memberName, status: $status, color: ${color.value}, date: $date)';

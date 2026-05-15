@@ -20,14 +20,13 @@ class Member {
 
 
 
-  // 🔸 Converter para Map e de Map para Member
 
   Map<String, dynamic> toMap() {
     return {
       'id': id,
       'name': name,
       'initial': initial,
-      'color': color.value, // Salva a cor como inteiro
+      'color': color.value, 
       'assigned_tasks': assignedTasks,
       'completion': completion,
     };
