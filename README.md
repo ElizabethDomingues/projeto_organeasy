@@ -321,8 +321,6 @@ Este projeto está licenciado sob a Licença MIT - consulte o arquivo [LICENSE](
 Dúvidas ou sugestões? Entre em contato através de:
 
 - **Email**: elizapdominguess@gmail.com
-- **Issues**: [Abrir uma issue](https://github.com/seu-usuario/organeasy/issues)
-- **Discussões**: [Participar de discussões](https://github.com/seu-usuario/organeasy/discussions)
 
 ---
 
